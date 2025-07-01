@@ -1,124 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Beginner HTML Page</title>
-  <style>
-    body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-  padding: 20px;
-    }
-
-    h1, h2 {
-    color: #333366;
-    }
-
-    p {
-    font-size: 16px;
-    }
-
-    ul, ol {
-    margin-left: 20px;
-    }
-
-    a {
-    color: blue;
-    text-decoration: none;
-    }
-
-    a:hover {
-    text-decoration: underline;
-    }
-
-    table {
-    border-collapse: collapse;
-    width: 50%;
-    }
-
-    th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-    }
-    .dogimage{
-        height:200px;
-        width:350px;
-    }
-    form {
-    margin-top: 20px;
-    }
-
-    input, textarea {
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 100%;
-    max-width: 300px;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <title>HTML Lists Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        .list-section {
+            margin-bottom: 30px;
+        }
+        dl {
+            background: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        dt {
+            font-weight: bold;
+            color: #00796b;
+        }
+        dd {
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Heading and Paragraph -->
-  <h1>Welcome to My HTML Page</h1>
-  <p>This is a paragraph. HTML is the standard markup language for creating web pages.</p>
+    <h1>Types of HTML Lists</h1>
 
-  <!-- Unordered List -->
-  <h2>My Favorite Fruits</h2>
-  <ul>
-    <li>Apple</li>
-    <li>Mango</li>
-    <li>Banana</li>
-  </ul>
+    <!-- Unordered List -->
+    <div class="list-section">
+        <h2>Unordered List</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </div>
 
-  <!-- Ordered List -->
-  <h2>Steps to Start Learning HTML</h2>
-  <ol>
-    <li>Learn basic tags</li>
-    <li>Practice building a page</li>
-    <li>Move to CSS and JavaScript</li>
-  </ol>
+    <!-- Ordered List -->
+    <div class="list-section">
+        <h2>Ordered List</h2>
+        <ol>
+            <li>Wake up</li>
+            <li>Brush teeth</li>
+            <li>Have breakfast</li>
+            <li>Go to work</li>
+        </ol>
+    </div>
 
-  <!-- Link -->
-  <p>Visit <a href="https://www.w3schools.com" target="_blank">W3Schools</a> to learn more.</p>
+    <!-- Definition List -->
+    <div class="list-section">
+        <h2>Definition List</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - the standard markup language for creating web pages.</dd>
 
-  <!-- Image -->
-  <h2>Sample Image</h2>
-  <img class="dogimage" src="dog.jpg" alt="Dog Image">
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - used for designing the look and formatting of a document written in HTML.</dd>
 
-  <!-- Table -->
-  <h2>Sample Table</h2>
-  <table border="1">
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Ragul</td>
-      <td>18</td>
-    </tr>
-    <tr>
-      <td>Gokul</td>
-      <td>18</td>
-    </tr>
-  </table>
-
-  <!-- Form -->
-  <h2>Contact Form</h2>
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
-
-    <input type="submit" value="Send">
-  </form>
+            <dt>JavaScript</dt>
+            <dd>A programming language used to add interactivity to web pages.</dd>
+        </dl>
+    </div>
 
 </body>
 </html>
+
