@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beginner HTML Page</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+    }
+
+    h1, h2 {
+    color: #333366;
+    }
+
+    p {
+    font-size: 16px;
+    }
+
+    ul, ol {
+    margin-left: 20px;
+    }
+
+    a {
+    color: blue;
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+
+    table {
+    border-collapse: collapse;
+    width: 50%;
+    }
+
+    th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    }
+    .dogimage{
+        height:200px;
+        width:350px;
+    }
+    form {
+    margin-top: 20px;
+    }
+
+    input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Heading and Paragraph -->
+  <h1>Welcome to My HTML Page</h1>
+  <p>This is a paragraph. HTML is the standard markup language for creating web pages.</p>
+
+  <!-- Unordered List -->
+  <h2>My Favorite Fruits</h2>
+  <ul>
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Banana</li>
+  </ul>
+
+  <!-- Ordered List -->
+  <h2>Steps to Start Learning HTML</h2>
+  <ol>
+    <li>Learn basic tags</li>
+    <li>Practice building a page</li>
+    <li>Move to CSS and JavaScript</li>
+  </ol>
+
+  <!-- Link -->
+  <p>Visit <a href="https://www.w3schools.com" target="_blank">W3Schools</a> to learn more.</p>
+
+  <!-- Image -->
+  <h2>Sample Image</h2>
+  <img class="dogimage" src="dog.jpg" alt="Dog Image">
+
+  <!-- Table -->
+  <h2>Sample Table</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Ragul</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Gokul</td>
+      <td>18</td>
+    </tr>
+  </table>
+
+  <!-- Form -->
+  <h2>Contact Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Send">
+  </form>
+
+</body>
+</html>
